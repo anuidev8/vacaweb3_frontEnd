@@ -1,0 +1,66 @@
+.blocker{
+    
+    transform-origin: center;
+    animation: blocker 4s steps(60,end)  infinite;
+   
+}
+.blocker-1{
+    animation-delay: 1.5s;
+}
+.blocker-2{
+    animation-delay: 2s;
+}
+.blocker-3{
+    animation-delay: 2.8s;
+}
+.blocker-4{
+    animation-delay: 3s;
+}
+
+.screen-video{
+    transform-origin: center;
+    animation: scaleTo 1.8s ease-out both;
+   
+}
+
+.hand{
+    transform-origin: bottom;
+    animation: hander 3s infinite;
+}
+@keyframes blocker {
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(.9);
+        opacity: .8;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes scaleTo {
+    0%{
+        transform: scale(0);
+    
+    }
+  
+    100%{
+        transform: scale(1);
+      
+    }
+}
+
+@keyframes hander {
+    0%{
+        transform: rotate(0deg) translateY(0px);
+    }
+    50%{
+        transform: rotate(-.3deg) translateY(5px);
+    }
+    100%{
+        transform: rotate(0deg) translateY(0px);
+    }
+}

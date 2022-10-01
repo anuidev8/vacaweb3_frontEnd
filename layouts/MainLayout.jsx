@@ -2,12 +2,12 @@
 
 import MainHeader from '../components/Header'
 
-const MainLayout = ({children}) =>{
+const MainLayout = ({children,userDetail = true}) =>{
     return(
         <div>
               
 
-             <MainHeader />
+             <MainHeader userDetail={userDetail} />
             <main className=' d-flex justify-content align-items'>
                <div className='main-content'>
 

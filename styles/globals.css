@@ -135,6 +135,14 @@ ul{
     
   
 }
+.w-btn-white{
+    background-color: white;
+    border-radius: .4rem;
+    color: var(--title-color);
+   
+    
+  
+}
 
 .w-btn-primary::before{
   content: "";
